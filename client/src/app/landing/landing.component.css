@@ -1,0 +1,41 @@
+#landingimage { 
+	color: #ffffff;
+	background: linear-gradient(rgba(20,20,20, .3), rgba(20,20,20, .3)), url('/assets/landing/landing.jpg');
+	height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 14rem;
+    text-align: center;
+}
+
+#aboutsection {
+    color: #ffffff;
+    background-color: #09171b;
+}
+
+#profile {
+    margin: 16px 0px 16px 0px;
+    border-radius: 50%;
+    max-width: 40%;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.biolinks {
+    color: white;
+    padding: 20px;
+    font-size: 28px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.biolinks:hover {
+    text-decoration: none;
+}
