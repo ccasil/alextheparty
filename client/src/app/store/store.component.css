@@ -1,0 +1,19 @@
+.refine {
+    border: 2px solid #343a40;
+    margin-top: 1em;
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.list-group-item {
+    background-color: #f8f9fa;
+}
+
+.list-group-item:hover {
+    background-color: #7e7f7f;
+    color: #f8f9fa;
+}
+
+.dropdown {
+    margin-top: 1em;
+}
