@@ -1,11 +1,30 @@
 let express = require('express'),
+    session = require('express-session'),
     path = require('path'),
     bodyParser = require('body-parser'),
     mongoose = require('mongoose');
 
 let app = express();
 
-mongoose.connect('mongodb://localhost/alextheparty');
+mongoose.connect('mongodb://localhost/alextheparty', { useNewUrlParser: true });
+mongoose.set('useCreateIndex', true);
+
+// "C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe"
+
+var UserSchema = new mongoose.Schema({
+    name: { type: String },
+    username: { type: String, unique: true, required: true },
+    password: { type: String, required: true },
+    admin: { type: Boolean }
+})
+mongoose.model('User', UserSchema)
+let User = mongoose.model('User')
+
+app.use(session({
+    secret: 'myname',
+    resave: false,
+    saveUninitialized: false,
+}))
 
 mongoose.Promise = global.Promise;
 
