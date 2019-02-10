@@ -13,7 +13,11 @@
 #profile {
     margin: 16px 0px 16px 0px;
     border-radius: 50%;
-    max-width: 40%;
+    max-width: 25%;
+    text-align: center;
+}
+.aboutsection {
+    height: 100vh;
 }
 
 .anchor {
